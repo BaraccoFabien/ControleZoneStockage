@@ -41,5 +41,29 @@ namespace DALControleZoneStockage
             AccesBD.GetInstance().CloseConnexion();
             return maListe;
         }
+
+        public List<Entreprise> GetEntreprise()
+        {
+            SqlCommand maCommande = new SqlCommand();
+            SqlConnection maConnexion = new SqlConnection();
+            List<Entreprise> maListe = new List<Entreprise>();
+            SqlConnection objConnect = AccesBD.GetInstance().GetSqlConnexion();
+            SqlDataReader monLecteur;
+
+            maCommande.Parameters.Clear();
+            maCommande.CommandType = System.Data.CommandType.StoredProcedure;
+            string strSql = "sp_AficherLesEntreprises";
+            maCommande.CommandText = strSql;
+            maConnexion.Open();
+            monLecteur = maCommande.ExecuteReader();
+
+            return maListe;
+
+
+
+
+
+        }
+
     }
 }
