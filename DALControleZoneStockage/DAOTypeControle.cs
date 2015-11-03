@@ -44,7 +44,7 @@ namespace DALControleZoneStockage
         public List<TypeControle> GetTypeControle()
         {
             SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
-            SqlCommand maCommande = new SqlCommand("sp_AficherLesTypesDeControle", objConnexion);
+            SqlCommand maCommande = new SqlCommand("sp_AficherLesEntreprises", objConnexion);
             List<TypeControle> maListe = new List<TypeControle>();
             
             SqlDataReader monLecteur;
