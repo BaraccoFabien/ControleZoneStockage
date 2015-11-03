@@ -11,3 +11,11 @@ C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug
 C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\GUIControleZoneStockage.csproj.GenerateResource.Cache
 C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.exe
 C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\GUIControleZoneStockage.csprojResolveAssemblyReference.cache
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.FrmEnregistrerControle.resources
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.Properties.Resources.resources
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\GUIControleZoneStockage.csproj.GenerateResource.Cache
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.exe
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.pdb

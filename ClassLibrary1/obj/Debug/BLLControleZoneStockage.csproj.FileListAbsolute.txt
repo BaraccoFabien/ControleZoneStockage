@@ -1,2 +1,3 @@
 J:\PPE\ControleZoneStockage\ClassLibrary1\obj\Debug\BLLControleZoneStockage.csprojResolveAssemblyReference.cache
 C:\Users\baraccof\Documents\ControloeZoneStockage\ClassLibrary1\obj\Debug\BLLControleZoneStockage.csprojResolveAssemblyReference.cache
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ClassLibrary1\obj\Debug\BLLControleZoneStockage.csprojResolveAssemblyReference.cache

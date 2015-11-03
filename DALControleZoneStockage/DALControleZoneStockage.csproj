@@ -43,6 +43,7 @@
     <Compile Include="AccesBD.cs" />
     <Compile Include="DAOControle.cs" />
     <Compile Include="DAOEntreprise.cs" />
+    <Compile Include="DAOHabilitation.cs" />
     <Compile Include="DAOTypeControle.cs" />
     <Compile Include="DAOZoneStockage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
