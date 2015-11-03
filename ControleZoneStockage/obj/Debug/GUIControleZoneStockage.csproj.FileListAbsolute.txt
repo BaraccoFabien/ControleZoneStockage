@@ -2,3 +2,12 @@ C:\Users\baraccof\documents\visual studio 2015\Projects\ControleZoneStockage\Con
 J:\PPE\ControleZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config
 C:\Users\baraccof\Downloads\ControleZoneStockageFabien\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.pdb
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\GUIControleZoneStockage.csprojResolveAssemblyReference.cache
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.FrmEnregistrerControle.resources
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.Properties.Resources.resources
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\GUIControleZoneStockage.csproj.GenerateResource.Cache
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.exe
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.pdb

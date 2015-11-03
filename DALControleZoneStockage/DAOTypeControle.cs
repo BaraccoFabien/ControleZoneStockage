@@ -43,20 +43,19 @@ namespace DALControleZoneStockage
 
         public List<TypeControle> GetTypeControle()
         {
-            SqlConnection objConnect = AccesBD.GetInstance().GetSqlConnexion();
-            SqlCommand maCommande = new SqlCommand();
-            SqlConnection maConnexion = new SqlConnection("sp_AficherLesEntreprises", objConnect);
+            SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
+            SqlCommand maCommande = new SqlCommand("sp_AficherLesTypesDeControle", objConnexion);
             List<TypeControle> maListe = new List<TypeControle>();
             
             SqlDataReader monLecteur;
 
             maCommande.Parameters.Clear();
             maCommande.CommandType = System.Data.CommandType.StoredProcedure;
-            maConnexion.Open();
+            objConnexion.Open();
             monLecteur = maCommande.ExecuteReader();
-
+            AccesBD.GetInstance().CloseConnexion();
             return maListe;
         }
     }
 }
-}
+
