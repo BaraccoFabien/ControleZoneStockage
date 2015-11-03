@@ -1,0 +1,5 @@
+J:\PPE\ControleZoneStockage\BOControleZoneStockage\bin\Debug\BOControleZoneStockage.dll
+J:\PPE\ControleZoneStockage\BOControleZoneStockage\bin\Debug\BOControleZoneStockage.pdb
+J:\PPE\ControleZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.csprojResolveAssemblyReference.cache
+J:\PPE\ControleZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.dll
+J:\PPE\ControleZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.pdb

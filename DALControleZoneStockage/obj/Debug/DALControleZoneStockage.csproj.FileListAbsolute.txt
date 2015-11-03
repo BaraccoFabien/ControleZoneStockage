@@ -1,0 +1,8 @@
+J:\PPE\ControleZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.dll.config
+J:\PPE\ControleZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.dll
+J:\PPE\ControleZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.pdb
+J:\PPE\ControleZoneStockage\DALControleZoneStockage\bin\Debug\BOControleZoneStockage.dll
+J:\PPE\ControleZoneStockage\DALControleZoneStockage\bin\Debug\BOControleZoneStockage.pdb
+J:\PPE\ControleZoneStockage\DALControleZoneStockage\obj\Debug\DALControleZoneStockage.csprojResolveAssemblyReference.cache
+J:\PPE\ControleZoneStockage\DALControleZoneStockage\obj\Debug\DALControleZoneStockage.dll
+J:\PPE\ControleZoneStockage\DALControleZoneStockage\obj\Debug\DALControleZoneStockage.pdb
