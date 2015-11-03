@@ -1,3 +1,4 @@
 C:\Users\baraccof\documents\visual studio 2015\Projects\ControleZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config
 J:\PPE\ControleZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config
 C:\Users\baraccof\Downloads\ControleZoneStockageFabien\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config
+C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config

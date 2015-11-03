@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BOControleZoneStockage;
 using System.Data.SqlClient;
 using System.Data;
+using BOControleZoneStockage;
 
 namespace DALControleZoneStockage
 {

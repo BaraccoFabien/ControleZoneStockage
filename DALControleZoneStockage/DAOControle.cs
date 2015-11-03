@@ -9,6 +9,18 @@ namespace DALControleZoneStockage
     public class DAOControle
     {
 
+        private static DAOControle uneInstanceDAOControle;
+
+        public static DAOControle GetInstanceDAOControle()
+        {
+            if (uneInstanceDAOControle == null)
+            {
+                uneInstanceDAOControle = new DAOControle();
+            }
+            return uneInstanceDAOControle;
+        }
+
+
 
     }
 }
