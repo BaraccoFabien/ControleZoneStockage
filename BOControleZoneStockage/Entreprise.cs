@@ -21,12 +21,17 @@ namespace BOControleZoneStockage
             mailEntreprise = unMailEntreprise;
         }
 
+        public Entreprise(int unIdEntreprise, string unNomEntreprise)
+        {
+            idEntreprise = unIdEntreprise;
+            nomEntreprise = unNomEntreprise;
+        }
+
         public int IdEntreprise
         {
             get { return idEntreprise; }
             set { idEntreprise = value; }
         }
-
 
         public string NomEntreprise
         {
@@ -34,15 +39,11 @@ namespace BOControleZoneStockage
             set { nomEntreprise = value; }
         }
 
-
-
         public string AdresseEntreprise
         {
             get { return adresseEntreprise; }
             set { adresseEntreprise = value; }
         }
-
-
 
         public string MailEntreprise
         {

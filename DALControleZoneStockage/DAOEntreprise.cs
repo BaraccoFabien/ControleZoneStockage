@@ -34,7 +34,7 @@ namespace DALControleZoneStockage
             SqlDataReader lecteur = maCommande.ExecuteReader();
             while (lecteur.Read())
             {
-                Entreprise uneEntreprise = new Entreprise((int)lecteur["ID_TYPE_CONTROLE"], (string)lecteur["TYPE_CONTROLE"]);
+                Entreprise uneEntreprise = new Entreprise((int)lecteur["ID_ENTREPRISE"], (string)lecteur["NOM_ENTREPRISE"]);
                 maListe.Add(uneEntreprise);
             }
             AccesBD.GetInstance().CloseConnexion();
