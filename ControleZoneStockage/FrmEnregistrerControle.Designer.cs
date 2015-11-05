@@ -97,6 +97,7 @@
             this.cbxTypeControle.Name = "cbxTypeControle";
             this.cbxTypeControle.Size = new System.Drawing.Size(121, 21);
             this.cbxTypeControle.TabIndex = 5;
+            this.cbxTypeControle.SelectedIndexChanged += new System.EventHandler(this.cbxTypeControle_SelectedIndexChanged);
             // 
             // cbxEntreprise
             // 
@@ -105,6 +106,7 @@
             this.cbxEntreprise.Name = "cbxEntreprise";
             this.cbxEntreprise.Size = new System.Drawing.Size(121, 21);
             this.cbxEntreprise.TabIndex = 6;
+            this.cbxEntreprise.SelectedIndexChanged += new System.EventHandler(this.cbxEntreprise_SelectedIndexChanged);
             // 
             // calDate
             // 
@@ -120,6 +122,7 @@
             this.btnEnregControle.TabIndex = 8;
             this.btnEnregControle.Text = "Enregistrer";
             this.btnEnregControle.UseVisualStyleBackColor = true;
+            this.btnEnregControle.Click += new System.EventHandler(this.btnEnregControle_Click);
             // 
             // pnlTypeControle
             // 

@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BOControleZoneStockage\BOControleZoneStockage.csproj">
+      <Project>{15093207-b1d5-41e6-8d1c-a4e87b1f5ee6}</Project>
+      <Name>BOControleZoneStockage</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClassLibrary1\BLLControleZoneStockage.csproj">
       <Project>{0c676495-05ac-49e2-86cd-9f32088ec626}</Project>
       <Name>BLLControleZoneStockage</Name>
