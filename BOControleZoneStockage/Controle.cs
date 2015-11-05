@@ -56,11 +56,6 @@ namespace BOControleZoneStockage
             set { dateControle = value; }
         }
 
-        public int IdControle
-        {
-            get { return idControle; }
-            set { idControle = value; }
-        }
 
     }
 }

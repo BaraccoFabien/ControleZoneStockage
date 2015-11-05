@@ -12,3 +12,8 @@ C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\obj\De
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\DALControleZoneStockage\obj\Debug\DALControleZoneStockage.csprojResolveAssemblyReference.cache
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\DALControleZoneStockage\obj\Debug\DALControleZoneStockage.dll
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\DALControleZoneStockage\obj\Debug\DALControleZoneStockage.pdb
+C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.dll.config
+C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.dll
+C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.pdb
+C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\Debug\BOControleZoneStockage.dll
+C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\Debug\BOControleZoneStockage.pdb
