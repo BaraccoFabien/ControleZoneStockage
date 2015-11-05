@@ -25,6 +25,14 @@ namespace BOControleZoneStockage
             this.montantHTControle = montantHTControle;
         }
 
+       
+
+        public int IdTypeControle
+        {
+            get { return idTypeControle; }
+            set { idTypeControle = value; }
+        }
+
         public int IdZoneStockage
         {
             get { return idZoneStockage; }

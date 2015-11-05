@@ -15,6 +15,9 @@ namespace ControleZoneStockage
         public FrmEnregistrerControle()
         {
             InitializeComponent();
+
         }
+
+
     }
 }
