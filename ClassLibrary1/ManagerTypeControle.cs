@@ -9,7 +9,7 @@ using BOControleZoneStockage;
 
 namespace BLLControleZoneStockage
 {
-    class ManagerTypeControle
+    public class ManagerTypeControle
     {
         private static ManagerTypeControle uneInstanceManagerTypeControle;
 
@@ -27,11 +27,7 @@ namespace BLLControleZoneStockage
             return uneInstanceManagerTypeControle;
         }
 
-        public void SetChaineConnexion(ConnectionStringSettings connString)
-        {
-            string laChaine = connString.ConnectionString;
-            AccesBD.GetInstance().LaChaineDeConnexion = laChaine;
-        }
+
 
         public List<TypeControle> GetTypesControle(int idZoneStockage)
         {

@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace DALControleZoneStockage
 {
@@ -13,7 +14,7 @@ namespace DALControleZoneStockage
         private string laChaineDeConnexion;
         private static AccesBD uneInstance;
 
-        //Retourne la chaine de connexion
+        //Retourne/modifie la chaine de connexion
         public string LaChaineDeConnexion
         {
             get { return laChaineDeConnexion; }
@@ -23,7 +24,7 @@ namespace DALControleZoneStockage
         //Pour que seule la classe AccesBD puisse créer un objet de cette classe le constructeur est privé
         private AccesBD()
         {
-
+            this.laChaineDeConnexion = ConfigurationManager.ConnectionStrings["BDControleZoneStockage"].ConnectionString;
         }
 
         //Singleton
@@ -38,23 +39,19 @@ namespace DALControleZoneStockage
             return uneInstance;
         }
         //Obtient l'objet responsable de la connexion a la BDD
+
         public SqlConnection GetSqlConnexion()
         {
-            if (objConnex==null)
+            if (objConnex == null)
             {
                 objConnex = new SqlConnection();
             }
 
             objConnex.ConnectionString = laChaineDeConnexion;
 
-            if (objConnex.State==System.Data.ConnectionState.Closed)
-            {
-                objConnex.Open();
-            }
-
             return objConnex;
         }
-        
+
         public void CloseConnexion()
         {
             if (objConnex!=null && objConnex.State==System.Data.ConnectionState.Open)

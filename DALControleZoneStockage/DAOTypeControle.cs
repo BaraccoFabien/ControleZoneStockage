@@ -24,7 +24,7 @@ namespace DALControleZoneStockage
 
         public List<TypeControle>SelectTypeControlePrevuePourUneZoneStockage(int idZoneStockage)
         {
-            SqlConnection objConnexion=AccesBD.GetInstance().GetSqlConnexion();
+            SqlConnection objConnexion=AccesBD.GetInstance().OpenConnexion();
             List<TypeControle> maListe = new List<TypeControle>();
             SqlCommand maCommande = new SqlCommand("sp_SelectTypePrevuePourZoneStockage", objConnexion);
             maCommande.CommandType = CommandType.StoredProcedure;
@@ -43,7 +43,7 @@ namespace DALControleZoneStockage
 
         public List<TypeControle> GetTypeControle()
         {
-            SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
+            SqlConnection objConnexion = AccesBD.GetInstance().OpenConnexion();
             SqlCommand maCommande = new SqlCommand("sp_AficherLesEntreprises", objConnexion);
             List<TypeControle> maListe = new List<TypeControle>();
             

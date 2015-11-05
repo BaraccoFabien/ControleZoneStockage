@@ -25,7 +25,7 @@ namespace DALControleZoneStockage
 
         public void InsertHabilitationParEntreprise(int idEntreprise, int idTypeDeControl)
         {
-            SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
+            SqlConnection objConnexion = AccesBD.GetInstance().OpenConnexion();
             List<TypeControle> maListeTypeControle = new List<TypeControle>();
             List<Entreprise> maLIsteEntreprise = new List<Entreprise>();
 

@@ -32,15 +32,17 @@
             this.lbTypeControle = new System.Windows.Forms.Label();
             this.lbEntreprise = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.cbxStockage = new System.Windows.Forms.ComboBox();
+            this.cbxTypeControle = new System.Windows.Forms.ComboBox();
+            this.cbxEntreprise = new System.Windows.Forms.ComboBox();
+            this.calDate = new System.Windows.Forms.MonthCalendar();
             this.btnEnregControle = new System.Windows.Forms.Button();
             this.pnlTypeControle = new System.Windows.Forms.Panel();
-            this.pnlEntrepriseCombo = new System.Windows.Forms.Panel();
+            this.pnlEntreprise = new System.Windows.Forms.Panel();
+            this.pnlDate = new System.Windows.Forms.Panel();
             this.pnlTypeControle.SuspendLayout();
-            this.pnlEntrepriseCombo.SuspendLayout();
+            this.pnlEntreprise.SuspendLayout();
+            this.pnlDate.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbZoneStockage
@@ -73,41 +75,42 @@
             // lbDate
             // 
             this.lbDate.AutoSize = true;
-            this.lbDate.Location = new System.Drawing.Point(20, 156);
+            this.lbDate.Location = new System.Drawing.Point(3, 9);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(36, 13);
             this.lbDate.TabIndex = 3;
             this.lbDate.Text = "Date :";
             // 
-            // comboBox1
+            // cbxStockage
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(133, 51);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cbxStockage.FormattingEnabled = true;
+            this.cbxStockage.Location = new System.Drawing.Point(133, 51);
+            this.cbxStockage.Name = "cbxStockage";
+            this.cbxStockage.Size = new System.Drawing.Size(121, 21);
+            this.cbxStockage.TabIndex = 4;
+            this.cbxStockage.SelectedIndexChanged += new System.EventHandler(this.cbxStockage_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cbxTypeControle
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(110, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 5;
+            this.cbxTypeControle.FormattingEnabled = true;
+            this.cbxTypeControle.Location = new System.Drawing.Point(110, 3);
+            this.cbxTypeControle.Name = "cbxTypeControle";
+            this.cbxTypeControle.Size = new System.Drawing.Size(121, 21);
+            this.cbxTypeControle.TabIndex = 5;
             // 
-            // comboBox3
+            // cbxEntreprise
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(107, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 6;
+            this.cbxEntreprise.FormattingEnabled = true;
+            this.cbxEntreprise.Location = new System.Drawing.Point(110, 3);
+            this.cbxEntreprise.Name = "cbxEntreprise";
+            this.cbxEntreprise.Size = new System.Drawing.Size(121, 21);
+            this.cbxEntreprise.TabIndex = 6;
             // 
-            // monthCalendar1
+            // calDate
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(70, 156);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 7;
+            this.calDate.Location = new System.Drawing.Point(47, 9);
+            this.calDate.Name = "calDate";
+            this.calDate.TabIndex = 7;
             // 
             // btnEnregControle
             // 
@@ -121,39 +124,49 @@
             // pnlTypeControle
             // 
             this.pnlTypeControle.Controls.Add(this.lbTypeControle);
-            this.pnlTypeControle.Controls.Add(this.comboBox2);
+            this.pnlTypeControle.Controls.Add(this.cbxTypeControle);
             this.pnlTypeControle.Location = new System.Drawing.Point(23, 78);
             this.pnlTypeControle.Name = "pnlTypeControle";
             this.pnlTypeControle.Size = new System.Drawing.Size(285, 27);
             this.pnlTypeControle.TabIndex = 9;
             // 
-            // pnlEntrepriseCombo
+            // pnlEntreprise
             // 
-            this.pnlEntrepriseCombo.Controls.Add(this.lbEntreprise);
-            this.pnlEntrepriseCombo.Controls.Add(this.comboBox3);
-            this.pnlEntrepriseCombo.Location = new System.Drawing.Point(23, 111);
-            this.pnlEntrepriseCombo.Name = "pnlEntrepriseCombo";
-            this.pnlEntrepriseCombo.Size = new System.Drawing.Size(285, 27);
-            this.pnlEntrepriseCombo.TabIndex = 10;
+            this.pnlEntreprise.Controls.Add(this.lbEntreprise);
+            this.pnlEntreprise.Controls.Add(this.cbxEntreprise);
+            this.pnlEntreprise.Location = new System.Drawing.Point(23, 111);
+            this.pnlEntreprise.Name = "pnlEntreprise";
+            this.pnlEntreprise.Size = new System.Drawing.Size(285, 27);
+            this.pnlEntreprise.TabIndex = 10;
+            // 
+            // pnlDate
+            // 
+            this.pnlDate.Controls.Add(this.calDate);
+            this.pnlDate.Controls.Add(this.lbDate);
+            this.pnlDate.Location = new System.Drawing.Point(23, 143);
+            this.pnlDate.Name = "pnlDate";
+            this.pnlDate.Size = new System.Drawing.Size(285, 193);
+            this.pnlDate.TabIndex = 11;
             // 
             // FrmEnregistrerControle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 386);
-            this.Controls.Add(this.pnlEntrepriseCombo);
+            this.Controls.Add(this.pnlDate);
+            this.Controls.Add(this.pnlEntreprise);
             this.Controls.Add(this.pnlTypeControle);
             this.Controls.Add(this.btnEnregControle);
-            this.Controls.Add(this.monthCalendar1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.lbDate);
+            this.Controls.Add(this.cbxStockage);
             this.Controls.Add(this.lbZoneStockage);
             this.Name = "FrmEnregistrerControle";
             this.Text = "Création d\'un Controle";
             this.pnlTypeControle.ResumeLayout(false);
             this.pnlTypeControle.PerformLayout();
-            this.pnlEntrepriseCombo.ResumeLayout(false);
-            this.pnlEntrepriseCombo.PerformLayout();
+            this.pnlEntreprise.ResumeLayout(false);
+            this.pnlEntreprise.PerformLayout();
+            this.pnlDate.ResumeLayout(false);
+            this.pnlDate.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,13 +178,14 @@
         private System.Windows.Forms.Label lbTypeControle;
         private System.Windows.Forms.Label lbEntreprise;
         private System.Windows.Forms.Label lbDate;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.ComboBox cbxStockage;
+        private System.Windows.Forms.ComboBox cbxTypeControle;
+        private System.Windows.Forms.ComboBox cbxEntreprise;
+        private System.Windows.Forms.MonthCalendar calDate;
         private System.Windows.Forms.Button btnEnregControle;
         private System.Windows.Forms.Panel pnlTypeControle;
-        private System.Windows.Forms.Panel pnlEntrepriseCombo;
+        private System.Windows.Forms.Panel pnlEntreprise;
+        private System.Windows.Forms.Panel pnlDate;
     }
 }
 

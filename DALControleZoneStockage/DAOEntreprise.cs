@@ -44,14 +44,11 @@ namespace DALControleZoneStockage
         public List<Entreprise> GetEntreprise()
         {
             SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
-            SqlConnection maConnexion = new SqlConnection();
             SqlCommand maCommande = new SqlCommand("sp_AficherLesEntreprises", objConnexion);
             List<Entreprise> maListe = new List<Entreprise>();
             SqlDataReader monLecteur;
-
-            maCommande.Parameters.Clear();
             maCommande.CommandType = System.Data.CommandType.StoredProcedure;
-            maConnexion.Open();
+            objConnexion.Open();
             monLecteur = maCommande.ExecuteReader();
             AccesBD.GetInstance().CloseConnexion();
             return maListe;

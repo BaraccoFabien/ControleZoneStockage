@@ -12,7 +12,7 @@ namespace BLLControleZoneStockage
     {
         private static ManagerControle monManager;
 
-        private static ManagerControle GetInstanceManagerControle()
+        public static ManagerControle GetInstanceManagerControle()
         {
             if (monManager==null)
             {
