@@ -155,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 386);
+            this.ClientSize = new System.Drawing.Size(326, 386);
             this.Controls.Add(this.pnlDate);
             this.Controls.Add(this.pnlEntreprise);
             this.Controls.Add(this.pnlTypeControle);

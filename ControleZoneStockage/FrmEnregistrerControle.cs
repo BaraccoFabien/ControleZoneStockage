@@ -25,7 +25,7 @@ namespace ControleZoneStockage
         {
             if (cbxStockage.SelectedIndex>=0)
             {
-                cbxTypeControle.DataSource= ManagerTypeControle.GetInstanceManagerTypeControlee().GetTypesControle(Convert.ToInt32(cbxStockage.SelectedValue));
+                cbxTypeControle.DataSource= ManagerTypeControle.GetInstanceManagerTypeControlee().GetTypeControlePrevuePourUneZoneStockage(Convert.ToInt32(cbxStockage.SelectedValue));
                 cbxTypeControle.Visible = true;
             }
         }
@@ -49,7 +49,7 @@ namespace ControleZoneStockage
 
         private void btnEnregControle_Click(object sender, EventArgs e)
         {
-            Controle monControle = new Controle(Convert.ToInt32(cbxStockage.SelectedValue),calDate.);
+            Controle monControle = new Controle(Convert.ToInt32(cbxStockage.SelectedValue),calDate.SelectionStart.Date,);
         }
     }
 }

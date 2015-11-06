@@ -15,13 +15,12 @@ namespace BOControleZoneStockage
         private int idEntreprise;
         private int idZoneStockage;
 
-        public Controle(int idTypeControle, DateTime dateControle,string resumeControle, float montantHTControle, int idEntreprise, int idZoneStockage)
+        public Controle(int idTypeControle, DateTime dateControle, float montantHTControle, int idEntreprise, int idZoneStockage)
         {
             this.idEntreprise = idEntreprise;
             this.idZoneStockage = idZoneStockage;
             this.idTypeControle = idTypeControle;
             this.dateControle = dateControle;
-            this.resumeControle = resumeControle;
             this.montantHTControle = montantHTControle;
         }
 
