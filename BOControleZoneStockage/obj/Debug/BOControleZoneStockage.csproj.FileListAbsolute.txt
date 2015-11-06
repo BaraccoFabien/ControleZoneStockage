@@ -8,3 +8,8 @@ C:\Users\baraccof\Documents\ControloeZoneStockage\BOControleZoneStockage\bin\Deb
 C:\Users\baraccof\Documents\ControloeZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.csprojResolveAssemblyReference.cache
 C:\Users\baraccof\Documents\ControloeZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.dll
 C:\Users\baraccof\Documents\ControloeZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\BOControleZoneStockage\bin\Debug\BOControleZoneStockage.dll
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\BOControleZoneStockage\bin\Debug\BOControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.csprojResolveAssemblyReference.cache
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.dll
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\BOControleZoneStockage\obj\Debug\BOControleZoneStockage.pdb

@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,10 +53,19 @@
     <Compile Include="FrmEnregistrerControle.Designer.cs">
       <DependentUpon>FrmEnregistrerControle.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionDesHabilitations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionDesHabilitations.Designer.cs">
+      <DependentUpon>GestionDesHabilitations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmEnregistrerControle.resx">
       <DependentUpon>FrmEnregistrerControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionDesHabilitations.resx">
+      <DependentUpon>GestionDesHabilitations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +88,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BOControleZoneStockage\BOControleZoneStockage.csproj">
+      <Project>{15093207-b1d5-41e6-8d1c-a4e87b1f5ee6}</Project>
+      <Name>BOControleZoneStockage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1\BLLControleZoneStockage.csproj">
+      <Project>{0c676495-05ac-49e2-86cd-9f32088ec626}</Project>
+      <Name>BLLControleZoneStockage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

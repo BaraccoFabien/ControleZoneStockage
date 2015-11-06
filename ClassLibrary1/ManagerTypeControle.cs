@@ -9,7 +9,7 @@ using BOControleZoneStockage;
 
 namespace BLLControleZoneStockage
 {
-    class ManagerTypeControle
+    public class ManagerTypeControle
     {
         private static ManagerTypeControle uneInstanceManagerTypeControle;
 
@@ -18,7 +18,7 @@ namespace BLLControleZoneStockage
 
         }
 
-        public static ManagerTypeControle GetInstanceManagerTypeControlee()
+        public static ManagerTypeControle GetInstanceManagerTypeControle()
         {
             if (uneInstanceManagerTypeControle == null)
             {
@@ -38,9 +38,9 @@ namespace BLLControleZoneStockage
            return DAOTypeControle.GetInstanceDAOTypeControle().SelectTypeControlePrevuePourUneZoneStockage(idZoneStockage);
         }
 
-        public List<TypeControle> GetToutTypeDeControl()
+        public List<TypeControle> GetTypeControle()
         {
-            return DAOTypeControle.GetInstanceDAOTypeControle().//Creer sp_AfficherTypeControl
+            return DAOTypeControle.GetInstanceDAOTypeControle().GetTypeControle();
         }
     }
 }
