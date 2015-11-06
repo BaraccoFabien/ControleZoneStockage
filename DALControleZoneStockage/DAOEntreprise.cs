@@ -41,15 +41,23 @@ namespace DALControleZoneStockage
             return maListe;
         }
 
-        public List<Entreprise> GetEntreprise()
+        public List<Entreprise> GetEntreprise(int idEntreprise)
         {
             SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
             SqlCommand maCommande = new SqlCommand("sp_AficherLesEntreprises", objConnexion);
             List<Entreprise> maListe = new List<Entreprise>();
-            SqlDataReader monLecteur;
             maCommande.CommandType = System.Data.CommandType.StoredProcedure;
+            maCommande.Parameters.Add("idEntrprise", SqlDbType.Int);
+            maCommande.Parameters[0].Value = idEntreprise;
+            SqlDataReader monLecteur;
+           
             objConnexion.Open();
             monLecteur = maCommande.ExecuteReader();
+            while (monLecteur.Read())
+            {
+                Entreprise uneEntreprise = new Entreprise((int)monLecteur["ID_ENTREPRISE"], (string)monLecteur["NOM_ENTREPRISE"]);
+                maListe.Add(uneEntreprise);
+            }
             AccesBD.GetInstance().CloseConnexion();
             return maListe;
 

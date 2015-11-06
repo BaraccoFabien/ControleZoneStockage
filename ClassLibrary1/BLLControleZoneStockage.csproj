@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ManagerControle.cs" />
     <Compile Include="ManagerEntreprise.cs" />
+    <Compile Include="ManagerHabilitation.cs" />
     <Compile Include="ManagerTypeControle.cs" />
     <Compile Include="ManagerZoneStockage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

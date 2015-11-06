@@ -77,6 +77,7 @@
             this.btnEnregistrer.TabIndex = 4;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // GestionDesHabilitations
             // 

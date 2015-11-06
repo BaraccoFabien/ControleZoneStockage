@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Controle.cs" />
     <Compile Include="Entreprise.cs" />
+    <Compile Include="Habilititation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypeControle.cs" />
     <Compile Include="ZoneStockage.cs" />

@@ -35,5 +35,19 @@ namespace ControleZoneStockage
                 cbxListeTypeControl.DataSource = ManagerTypeControle.GetInstanceManagerTypeControle().GetTypeControle();
             }
         }
+
+        private void btnEnregistrer_Click(object sender, EventArgs e)
+        {
+            if(cbxListeEntreprise.SelectedIndex ==0)
+            {
+                MessageBox.Show("Veuillez choisir une entreprise à habiliter!");
+            }
+            if (cbxListeTypeControl.SelectedIndex == 0)
+            {
+                MessageBox.Show("Veuillez choisir une habilitation à attribuer!");
+            }
+            else
+
+        }
     }
 }

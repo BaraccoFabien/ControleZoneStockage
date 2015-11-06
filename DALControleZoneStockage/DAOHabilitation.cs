@@ -23,7 +23,7 @@ namespace DALControleZoneStockage
             return uneInstanceHabilitation;
         }
 
-        public void InsertHabilitationParEntreprise(int idEntreprise, int idTypeDeControl)
+        public List<Habilititation> InsertHabilitationParEntreprise(int idEntreprise, int idTypeControl)
         {
             SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
             List<TypeControle> maListeTypeControle = new List<TypeControle>();
@@ -34,9 +34,9 @@ namespace DALControleZoneStockage
             maCommande.Parameters.Add("idEntreprise", SqlDbType.Int);
             maCommande.Parameters[0].Value = idEntreprise;
             maCommande.Parameters.Add("idTypeControle", SqlDbType.Int);
-            maCommande.Parameters[1].Value = idTypeDeControl;
+            maCommande.Parameters[1].Value = idTypeControl;
             objConnexion.Open();
-            SqlDataReader lecteur = maCommande.ExecuteReader();
-        }
+            maCommande.ExecuteNonQuery();
+            AccesBD.GetInstance().CloseConnexion();
     }
 }
