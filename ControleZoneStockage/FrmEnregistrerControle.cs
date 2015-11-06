@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLLControleZoneStockage;
+using BOControleZoneStockage;
 
 namespace ControleZoneStockage
 {
@@ -15,6 +17,39 @@ namespace ControleZoneStockage
         public FrmEnregistrerControle()
         {
             InitializeComponent();
+            //Initialiser la comboBox avec toutes les zones de stockages
+
+        }
+
+        private void cbxStockage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxStockage.SelectedIndex>=0)
+            {
+                cbxTypeControle.DataSource= ManagerTypeControle.GetInstanceManagerTypeControlee().GetTypeControlePrevuePourUneZoneStockage(Convert.ToInt32(cbxStockage.SelectedValue));
+                cbxTypeControle.Visible = true;
+            }
+        }
+
+        private void cbxTypeControle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxTypeControle.SelectedIndex >= 0)
+            {
+                cbxEntreprise.DataSource = ManagerEntreprise.GetInstanceManagerEntreprise().GetLesEntreprise(Convert.ToInt32(cbxTypeControle.SelectedValue));
+                cbxEntreprise.Visible = true;
+            }
+        }
+
+        private void cbxEntreprise_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxTypeControle.SelectedIndex >= 0)
+            {
+                calDate.Visible= true;
+            }
+        }
+
+        private void btnEnregControle_Click(object sender, EventArgs e)
+        {
+            Controle monControle = new Controle(Convert.ToInt32(cbxStockage.SelectedValue),calDate.SelectionStart.Date,);
         }
     }
 }

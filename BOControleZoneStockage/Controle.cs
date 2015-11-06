@@ -15,14 +15,21 @@ namespace BOControleZoneStockage
         private int idEntreprise;
         private int idZoneStockage;
 
-        public Controle(int idTypeControle, DateTime dateControle,string resumeControle, float montantHTControle, int idEntreprise, int idZoneStockage)
+        public Controle(int idTypeControle, DateTime dateControle, float montantHTControle, int idEntreprise, int idZoneStockage)
         {
             this.idEntreprise = idEntreprise;
             this.idZoneStockage = idZoneStockage;
             this.idTypeControle = idTypeControle;
             this.dateControle = dateControle;
-            this.resumeControle = resumeControle;
             this.montantHTControle = montantHTControle;
+        }
+
+       
+
+        public int IdTypeControle
+        {
+            get { return idTypeControle; }
+            set { idTypeControle = value; }
         }
 
         public int IdZoneStockage
@@ -56,11 +63,6 @@ namespace BOControleZoneStockage
             set { dateControle = value; }
         }
 
-        public int IdControle
-        {
-            get { return idControle; }
-            set { idControle = value; }
-        }
 
     }
 }

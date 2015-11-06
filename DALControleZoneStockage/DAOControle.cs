@@ -23,24 +23,24 @@ namespace DALControleZoneStockage
             return uneInstanceDAOControle;
         }
 
-        public List<Controle> InsertControle(int idControle, DateTime dateControle, string resumeControle, float montantHTControle)
+        public List<Controle> InsertControle(Controle monControle)
         {
             SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
             List<Controle> maListe = new List<Controle>();
             SqlCommand maCommande = new SqlCommand("sp_CreerControle", objConnexion);
             maCommande.CommandType = CommandType.StoredProcedure;
+            maCommande.Parameters.Add("idZoneStockage", SqlDbType.Int);
+            maCommande.Parameters[0].Value = monControle.IdZoneStockage;
+            maCommande.Parameters.Add("idEntreprise", SqlDbType.Int);
+            maCommande.Parameters[1].Value = monControle.IdEntreprise;
             maCommande.Parameters.Add("idTypeControle", SqlDbType.Int);
-            maCommande.Parameters[0].Value = idControle;
-            maCommande.Parameters.Add("idTypeControle", SqlDbType.Int);
-            maCommande.Parameters[1].Value = dateControle;
-            maCommande.Parameters.Add("idTypeControle", SqlDbType.Int);
-            maCommande.Parameters[2].Value = resumeControle;
-            maCommande.Parameters.Add("idTypeControle", SqlDbType.Int);
-            maCommande.Parameters[3].Value = montantHTControle;
-            maCommande.Parameters.Add("idTypeControle", SqlDbType.Int);
-            maCommande.Parameters[4].Value = montantHTControle;
-            maCommande.Parameters.Add("idTypeControle", SqlDbType.Int);
-            maCommande.Parameters[5].Value = montantHTControle;
+            maCommande.Parameters[2].Value = monControle.IdTypeControle;
+            maCommande.Parameters.Add("dateControle", SqlDbType.Date);
+            maCommande.Parameters[3].Value = monControle.DateControle;
+            maCommande.Parameters.Add("resumeControle", SqlDbType.VarChar);
+            maCommande.Parameters[4].Value = monControle.ResumeControle;
+            maCommande.Parameters.Add("montantHtControle", SqlDbType.Float);
+            maCommande.Parameters[5].Value = monControle.MontantHTControle;
             objConnexion.Open();
             maCommande.ExecuteNonQuery();
             AccesBD.GetInstance().CloseConnexion();

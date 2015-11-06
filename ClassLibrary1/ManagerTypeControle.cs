@@ -27,13 +27,9 @@ namespace BLLControleZoneStockage
             return uneInstanceManagerTypeControle;
         }
 
-        public void SetChaineConnexion(ConnectionStringSettings connString)
-        {
-            string laChaine = connString.ConnectionString;
-            AccesBD.GetInstance().LaChaineDeConnexion = laChaine;
-        }
 
-        public List<TypeControle> GetTypesControle(int idZoneStockage)
+
+        public List<TypeControle> GetTypeControlePrevuePourUneZoneStockage(int idZoneStockage)
         {
            return DAOTypeControle.GetInstanceDAOTypeControle().SelectTypeControlePrevuePourUneZoneStockage(idZoneStockage);
         }
