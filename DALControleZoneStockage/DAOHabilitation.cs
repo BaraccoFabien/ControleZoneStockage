@@ -14,7 +14,7 @@ namespace DALControleZoneStockage
     {
         private static DAOHabilitation uneInstanceHabilitation;
 
-        public static DAOHabilitation GetInstanceDAOTypeControle()
+        public static DAOHabilitation GetInstanceDAOHabilitation()
         {
             if (uneInstanceHabilitation == null)
             {

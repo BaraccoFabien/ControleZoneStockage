@@ -34,9 +34,9 @@ namespace BLLControleZoneStockage
            return DAOTypeControle.GetInstanceDAOTypeControle().SelectTypeControlePrevuePourUneZoneStockage(idZoneStockage);
         }
 
-        public List<TypeControle> GetTypeControle(int idEntreprise, int idTypeControl)
+        public List<TypeControle> GetTypeControle(int idTypeControl)
         {
-            return DAOTypeControle.GetInstanceDAOTypeControle().GetTypeControle();
+            return DAOTypeControle.GetInstanceDAOTypeControle().GetTypeControle(idTypeControl);
         }
     }
 }

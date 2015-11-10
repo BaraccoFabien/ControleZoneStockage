@@ -31,9 +31,9 @@ namespace BLLControleZoneStockage
             return DAOEntreprise.GetInstanceDAOEntreprise().SelectEntrepriseHabiliterPourUnTypeControle(idTypeControle);
         }
 
-        public List<Entreprise> GetEntreprise()
+        public List<Entreprise> GetEntreprise(int idEntreprise)
         {
-            return DAOEntreprise.GetInstanceDAOEntreprise().GetEntreprise();
+            return DAOEntreprise.GetInstanceDAOEntreprise().GetEntreprise(idEntreprise);
         }
     }
 }

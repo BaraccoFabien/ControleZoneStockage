@@ -19,7 +19,7 @@ namespace BLLControleZoneStockage
             if (uneInstanceManagerHabilitation == null)
             {
                 uneInstanceManagerHabilitation = new ManagerHabilitation();
-                
+            } 
             return uneInstanceManagerHabilitation;
         }
 
@@ -28,9 +28,9 @@ namespace BLLControleZoneStockage
 
         }
 
-        public void InsertHabilitationParEntreprise()
+        public void InsertHabilitationParEntreprise(int idEntreprise, int idTypeControl)
         {
-            DAOHabilitation.
+            DAOHabilitation.GetInstanceDAOHabilitation().InsertHabilitationParEntreprise(idEntreprise, idTypeControl);
         }
     }
 
