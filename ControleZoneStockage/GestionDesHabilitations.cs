@@ -48,11 +48,10 @@ namespace ControleZoneStockage
             }
             else
             {
-                // btnEnregistrer= ManagerHabilitation.GetInstanceManagerHabilitation().InsertHabilitationParEntreprise(uneHabilitation("id);
                 int idEntre = Convert.ToInt32(cbxListeEntreprise.SelectedValue);
-                int idTypC = Convert.ToInt32(cbxListeTypeControl.SelectedValue);
+                int idTypCtrl = Convert.ToInt32(cbxListeTypeControl.SelectedValue);
 
-                Habilititation uneHabilitation = new Habilititation(idEntre,idTypC);
+                Habilititation uneHabilitation = new Habilititation(idEntre,idTypCtrl);
             }
 
         }

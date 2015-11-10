@@ -17,3 +17,8 @@ C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\De
 C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.pdb
 C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\Debug\BOControleZoneStockage.dll
 C:\Users\baraccof\Documents\ControloeZoneStockage\DALControleZoneStockage\bin\Debug\BOControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.dll.config
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.dll
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\DALControleZoneStockage\bin\Debug\DALControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\DALControleZoneStockage\bin\Debug\BOControleZoneStockage.dll
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\DALControleZoneStockage\bin\Debug\BOControleZoneStockage.pdb
