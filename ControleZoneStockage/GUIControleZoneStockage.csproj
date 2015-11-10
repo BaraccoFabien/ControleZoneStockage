@@ -98,6 +98,10 @@
       <Project>{0c676495-05ac-49e2-86cd-9f32088ec626}</Project>
       <Name>BLLControleZoneStockage</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DALControleZoneStockage\DALControleZoneStockage.csproj">
+      <Project>{4a4a7329-474d-48b4-b6db-578668513c60}</Project>
+      <Name>DALControleZoneStockage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

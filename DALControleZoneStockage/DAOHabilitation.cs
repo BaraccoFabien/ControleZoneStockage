@@ -23,20 +23,21 @@ namespace DALControleZoneStockage
             return uneInstanceHabilitation;
         }
 
-        public List<Habilititation> InsertHabilitationParEntreprise(int idEntreprise, int idTypeControl)
+        public List<Habilititation> InsertHabilitationParEntreprise(Habilititation uneHabilitation)
         {
             SqlConnection objConnexion = AccesBD.GetInstance().GetSqlConnexion();
-            List<TypeControle> maListeTypeControle = new List<TypeControle>();
-            List<Entreprise> maLIsteEntreprise = new List<Entreprise>();
+            List<Habilititation> maListe = new List<Habilititation>();
 
             SqlCommand maCommande = new SqlCommand("sp_InsertHabilitation", objConnexion);
             maCommande.CommandType = CommandType.StoredProcedure;
             maCommande.Parameters.Add("idEntreprise", SqlDbType.Int);
-            maCommande.Parameters[0].Value = idEntreprise;
+            maCommande.Parameters[0].Value = uneHabilitation.IdEntrepriseHabiliter;
             maCommande.Parameters.Add("idTypeControle", SqlDbType.Int);
-            maCommande.Parameters[1].Value = idTypeControl;
+            maCommande.Parameters[1].Value = uneHabilitation.IdTypeControlHabiliter;
             objConnexion.Open();
             maCommande.ExecuteNonQuery();
             AccesBD.GetInstance().CloseConnexion();
+            return maListe;
+        }
     }
 }

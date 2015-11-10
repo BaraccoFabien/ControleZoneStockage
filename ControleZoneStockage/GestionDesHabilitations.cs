@@ -24,7 +24,7 @@ namespace ControleZoneStockage
         {
             if (cbxListeEntreprise.SelectedIndex == 0)
             {
-                cbxListeEntreprise.DataSource = ManagerEntreprise.GetInstanceManagerEntreprise().GetEntreprise();
+                cbxListeEntreprise.DataSource = ManagerEntreprise.GetInstanceManagerEntreprise().GetEntreprise(Convert.ToInt32(cbxListeEntreprise.SelectedValue));
             }
         }
 
@@ -32,7 +32,7 @@ namespace ControleZoneStockage
         {
             if (cbxListeTypeControl.SelectedIndex == 0)
             {
-                cbxListeTypeControl.DataSource = ManagerTypeControle.GetInstanceManagerTypeControle().GetTypeControle();
+                cbxListeTypeControl.DataSource = ManagerTypeControle.GetInstanceManagerTypeControle().GetTypeControle(Convert.ToInt32(cbxListeTypeControl.SelectedValue));
             }
         }
 
@@ -47,6 +47,13 @@ namespace ControleZoneStockage
                 MessageBox.Show("Veuillez choisir une habilitation à attribuer!");
             }
             else
+            {
+                // btnEnregistrer= ManagerHabilitation.GetInstanceManagerHabilitation().InsertHabilitationParEntreprise(uneHabilitation("id);
+                int idEntre = Convert.ToInt32(cbxListeEntreprise.SelectedValue);
+                int idTypC = Convert.ToInt32(cbxListeTypeControl.SelectedValue);
+
+                Habilititation uneHabilitation = new Habilititation(idEntre,idTypC);
+            }
 
         }
     }

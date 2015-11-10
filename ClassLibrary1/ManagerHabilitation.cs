@@ -10,7 +10,7 @@ using DALControleZoneStockage;
 
 namespace BLLControleZoneStockage
 {
-    class ManagerHabilitation
+   public class ManagerHabilitation
     {
         private static ManagerHabilitation uneInstanceManagerHabilitation;
 
@@ -28,9 +28,9 @@ namespace BLLControleZoneStockage
 
         }
 
-        public void InsertHabilitationParEntreprise(int idEntreprise, int idTypeControl)
+        public void InsertHabilitationParEntreprise(Habilititation uneHabilitation)
         {
-            DAOHabilitation.GetInstanceDAOHabilitation().InsertHabilitationParEntreprise(idEntreprise, idTypeControl);
+            DAOHabilitation.GetInstanceDAOHabilitation().InsertHabilitationParEntreprise(uneHabilitation);
         }
     }
 

@@ -19,3 +19,4 @@ C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\Co
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\GUIControleZoneStockage.csproj.GenerateResource.Cache
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.exe
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.GestionDesHabilitations.resources
