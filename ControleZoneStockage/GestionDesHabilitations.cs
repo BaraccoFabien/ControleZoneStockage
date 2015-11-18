@@ -22,7 +22,7 @@ namespace ControleZoneStockage
 
         private void cbxListeEntreprise_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbxListeEntreprise.SelectedIndex == 0)
+            if (cbxListeEntreprise.SelectedIndex >= 0)
             {
                 cbxListeEntreprise.DataSource = ManagerEntreprise.GetInstanceManagerEntreprise().GetEntreprise(Convert.ToInt32(cbxListeEntreprise.SelectedValue));
             }
@@ -30,7 +30,7 @@ namespace ControleZoneStockage
 
         private void cbxListeTypeControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbxListeTypeControl.SelectedIndex == 0)
+            if (cbxListeTypeControl.SelectedIndex >= 0)
             {
                 cbxListeTypeControl.DataSource = ManagerTypeControle.GetInstanceManagerTypeControle().GetTypeControle(Convert.ToInt32(cbxListeTypeControl.SelectedValue));
             }

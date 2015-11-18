@@ -49,7 +49,7 @@ namespace ControleZoneStockage
 
         private void btnEnregControle_Click(object sender, EventArgs e)
         {
-            Controle monControle = new Controle(Convert.ToInt32(cbxStockage.SelectedValue),calDate.SelectionStart.Date);
+           // Controle monControle = new Controle(Convert.ToInt32(cbxStockage.SelectedValue),calDate.SelectionStart.Date);
         }
     }
 }

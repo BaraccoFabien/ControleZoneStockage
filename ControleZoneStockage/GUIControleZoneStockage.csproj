@@ -87,9 +87,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BOControleZoneStockage\BOControleZoneStockage.csproj">
       <Project>{15093207-b1d5-41e6-8d1c-a4e87b1f5ee6}</Project>
       <Name>BOControleZoneStockage</Name>

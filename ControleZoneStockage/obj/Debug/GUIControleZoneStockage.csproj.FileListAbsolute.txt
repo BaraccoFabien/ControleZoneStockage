@@ -10,7 +10,6 @@ C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug
 C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\GUIControleZoneStockage.csproj.GenerateResource.Cache
 C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.exe
 C:\Users\baraccof\Documents\ControloeZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.pdb
-C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe.config
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.exe
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\ControleZoneStockage.pdb
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\GUIControleZoneStockage.csprojResolveAssemblyReference.cache
@@ -20,3 +19,9 @@ C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\GU
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.exe
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.pdb
 C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\obj\Debug\ControleZoneStockage.GestionDesHabilitations.resources
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\BLLControleZoneStockage.dll
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\BOControleZoneStockage.dll
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\DALControleZoneStockage.dll
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\BOControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\BLLControleZoneStockage.pdb
+C:\Users\GALPEY\Desktop\TP\GestionZoneStockage\ControleZoneStockage\bin\Debug\DALControleZoneStockage.pdb
